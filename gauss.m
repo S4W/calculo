@@ -35,6 +35,23 @@ function answer = gauss(a, b, p) %si p es igual a 1 entonces se hace con pivoteo
                 
         end
         
+        if a(i,i) == 0 %Verificamos si el pivote es 0, en caso de serlo se procede al cambio
+           for j = i+1:n %Buscamos el siguiente numero dentro de esa columna que no es 0
+              if a(j,i) ~= 0
+                  for c = i:n
+                     aux = a(i,c);
+                     a(i,c) = a(j,c);
+                     a(j,c) = aux;
+                  end
+                  break
+              end
+           end
+           if a(i,i) == 0 %si no se encuuentra ninguna fila que funcione, el programa termina
+               a = 0
+              return
+           end
+        end
+        
         for f = i+1:n %El f representa las filas por debajo de el elemento con el que estamos trabajando de la diagonal principal
             rest = 1:1:n-i+1; %Creamos un arreglo con el tamano de la fila
             alfa = a(f,i)/a(i,i); %El alfa a multiplicar la fila de la diagonal que trabaja para hacer 0 los que estan por debajo de el

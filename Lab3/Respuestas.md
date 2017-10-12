@@ -125,4 +125,4 @@ creacinv == inv(reactor) * equilibrio
 
 norm(reactor) * norm(invreactor) =
 
-   4.134195198259087
+   	4.134195198259087

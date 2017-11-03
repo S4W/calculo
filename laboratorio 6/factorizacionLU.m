@@ -13,13 +13,13 @@ function [L,U] = factorizacionLU(A)
 
     for i=1:1:n
         for j=1:1:n
-            if i < j
+            if i <= j
                U(i,j) = A(i,j);
-            elseif i >= j
+               if i==j
+                  L(i,j) = 1;
+               end
+            elseif i > j
                 L(i,j) = A(i,j);
-                if i==j
-                  U(i,j) = 1;
-                end
             end
         end
     end

@@ -1,0 +1,21 @@
+Datos Calculados con Polinomio de Grado 15:
+c)	Tiempo = 4.5
+		Temperatura =  36.581820642794298
+	Tiempo = 5
+		Temperatura = 36.496139335002681
+	Tiempo = 5.5
+		Temperatura = 36.660080725323496
+	
+d)	Temperatura = 36.612
+		Tiempo = 4.727807562536327
+
+Datos Calculados con Polinomio de Grado 20:
+c)	Tiempo = 4.5
+		Temperatura =  36.773662772256991
+	Tiempo = 5
+		Temperatura = 36.813948970254607
+	Tiempo = 5.5
+		Temperatura = 36.856388069346238
+
+d)	Temperatura = 36.612
+		Tiempo = 7.981675683520734
